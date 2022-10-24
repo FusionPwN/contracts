@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace Vanilo\Contracts;
 
+use Illuminate\Support\Collection;
+
 interface Payable
 {
     public function getPayableId(): string;
@@ -23,7 +25,7 @@ interface Payable
 
     public function getCurrency(): string;
 
-    public function getBillpayer(): ?Billpayer;
+    public function getBillpayer(): ?Collection;
 
     /** The human readable representation, eg.: "Order no. ABC-123" */
     public function getTitle(): string;
