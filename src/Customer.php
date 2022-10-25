@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Vanilo\Contracts;
 
-interface Customer extends Organization, Person
+interface Customer extends Person
 {
     /**
      * Returns the name of the customer (either company or person's name)
